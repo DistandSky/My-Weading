@@ -1,0 +1,110 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+
+}
+
+body {
+    font-size: 1.2rem;
+    font family:"Work Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/DSCF1180.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: saturate();
+
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'sacramento', cursive;
+    font-style: bold;
+
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: rgb(255, 250, 250);
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+background-color: var(--pink);
+color: white;
+}
+.waktu{
+    display: flex;
+    background-image: linear-gradient(rgba(43, 42, 42, 0.5), rgba(43, 42, 42, 0.5));
+    border-radius: 45%;
+    
+}
+.waktu div{
+    flex-basis: 100px;
+}
+.waktu div p{
+    font-size: 50px;
+    margin-bottom: -14px;
+    font-family: 'Fredericka the Great', serif;
+}
+.waktu span{
+    font-family: 'quintessential', serif;
+}
+.logo{
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+}
+
+
+/* media query */
+/* laptop */
+@media (max-width:768px){
+html{
+    font-size: 75%;
+}
+}
+
+/* tablet */
+@media (max-width:768px){
+    html{
+        font-size: 65%;
+    }
+}
+
+/* hp */
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+}
